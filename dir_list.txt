@@ -1,0 +1,31 @@
+[01;34m.[00m
+├── ./app.js
+├── [01;34m./config[00m
+│   ├── [01;34m./config/config[00m
+│   │   └── ./config/config/default.json
+│   ├── ./config/default.json
+│   └── ./config/Readme.md
+├── ./dir_list.txt
+├── [01;34m./helpers[00m
+│   └── ./helpers/auth.js
+├── [01;34m./middleware[00m
+│   └── ./middleware/auth.js
+├── [01;34m./models[00m
+│   ├── ./models/todo.js
+│   └── ./models/user.js
+├── ./package.json
+├── ./package-lock.json
+├── ./README.md
+├── [01;34m./routes[00m
+│   ├── ./routes/auth.js
+│   ├── ./routes/todo.js
+│   └── ./routes/user.js
+├── [01;34m./services[00m
+│   ├── ./services/todo.js
+│   └── ./services/user.js
+└── [01;34m./test[00m
+    ├── ./test/auth.test.js
+    ├── ./test/todo.test.js
+    └── ./test/user.test.js
+
+8 directories, 20 files

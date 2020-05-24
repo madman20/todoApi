@@ -1,0 +1,48 @@
+{
+  "name": "todoApi",
+  "version": "1.0.0",
+  "description": "Todo server with JWT using MongoDB, Node.js, and Express web framework",
+  "main": "app.js",
+  "scripts": {
+    "mocha": "mocha --timeout=5000 --exit",
+    "test": "npm run mocha",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madman20/todoApi"
+  },
+  "keywords": [
+    "Todo",
+    "MongoDB",
+    "Node.js",
+    "Express",
+    "web",
+    "service",
+    "JSON",
+    "Authentication",
+    "Authorization",
+    "JWT",
+    "JSON Web Token"
+  ],
+  "author": "Mayank Gupta",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "latest",
+    "config": "^3.3.1",
+    "cors": "latest",
+    "express": "latest",
+    "jsonwebtoken": "latest",
+    "mongoose": "latest",
+    "morgan": "latest"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "faker": "^4.1.0",
+    "mocha": "^7.2.0",
+    "nodemon": "latest",
+    "nyc": "^15.0.1"
+  }
+}
