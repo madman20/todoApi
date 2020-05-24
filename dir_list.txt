@@ -1,31 +1,31 @@
-[01;34m.[00m
-├── ./app.js
-├── [01;34m./config[00m
-│   ├── [01;34m./config/config[00m
-│   │   └── ./config/config/default.json
-│   ├── ./config/default.json
-│   └── ./config/Readme.md
-├── ./dir_list.txt
-├── [01;34m./helpers[00m
-│   └── ./helpers/auth.js
-├── [01;34m./middleware[00m
-│   └── ./middleware/auth.js
-├── [01;34m./models[00m
-│   ├── ./models/todo.js
-│   └── ./models/user.js
-├── ./package.json
-├── ./package-lock.json
-├── ./README.md
-├── [01;34m./routes[00m
-│   ├── ./routes/auth.js
-│   ├── ./routes/todo.js
-│   └── ./routes/user.js
-├── [01;34m./services[00m
-│   ├── ./services/todo.js
-│   └── ./services/user.js
-└── [01;34m./test[00m
-    ├── ./test/auth.test.js
-    ├── ./test/todo.test.js
-    └── ./test/user.test.js
+.
++-- ./app.js                                   > server app
++-- ./config
+│   +-- ./config/config                        > creating config for running test cases
+│   │   \-- ./config/config/default.json
+│   +-- ./config/default.json                  > config for constants
+│   \-- ./config/Readme.md                     > Reason for separate config for test cases
++-- ./dir_list.txt                             > dir structure
++-- ./helpers                                  > common functions used among components for code reuse 
+│   \-- ./helpers/auth.js
++-- ./middleware                               > middleware used among request flow,Here JWT authentication
+│   \-- ./middleware/auth.js
++-- ./models                                   > collection structure
+│   +-- ./models/todo.js
+│   \-- ./models/user.js
++-- ./package.json                             > required dependencies and task automation
++-- ./package-lock.json
++-- ./README.md                                > This doc
++-- ./routes
+│   +-- ./routes/auth.js                       > separate routes for generating token for authentication and authorization
+│   +-- ./routes/todo.js                       > For Todo CRUD operation
+│   \-- ./routes/user.js                       > To signUp user for generating authentication
++-- ./services
+│   +-- ./services/todo.js                     > logical layer as per model entity for todo
+│   \-- ./services/user.js                     > logical layer as per model entity for user
+\-- ./test                                     > Basic Unit Test cases developed with TDD approach and are independent 
+    +-- ./test/auth.test.js                    > auth token route flow
+    +-- ./test/todo.test.js                    > todo routes flow 
+    \-- ./test/user.test.js                    > user routes flow
 
 8 directories, 20 files

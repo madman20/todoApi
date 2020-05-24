@@ -4,37 +4,8 @@
 
 > directory and file explaination as follows--
 
-.
-+-- ./app.js                                   > server app
-+-- ./config
-│   +-- ./config/config                        > creating config for running test cases
-│   │   \-- ./config/config/default.json
-│   +-- ./config/default.json                  > config for constants
-│   \-- ./config/Readme.md                     > Reason for separate config for test cases
-+-- ./dir_list.txt                             > dir structure
-+-- ./helpers                                  > common functions used among components for code reuse 
-│   \-- ./helpers/auth.js
-+-- ./middleware                               > middleware used among request flow,Here JWT authentication
-│   \-- ./middleware/auth.js
-+-- ./models                                   > collection structure
-│   +-- ./models/todo.js
-│   \-- ./models/user.js
-+-- ./package.json                             > required dependencies and task automation
-+-- ./package-lock.json
-+-- ./README.md                                > This doc
-+-- ./routes
-│   +-- ./routes/auth.js                       > separate routes for generating token for authentication and authorization
-│   +-- ./routes/todo.js                       > For Todo CRUD operation
-│   \-- ./routes/user.js                       > To signUp user for generating authentication
-+-- ./services
-│   +-- ./services/todo.js                     > logical layer as per model entity for todo
-│   \-- ./services/user.js                     > logical layer as per model entity for user
-\-- ./test                                     > Basic Unit Test cases developed with TDD approach and are independent 
-    +-- ./test/auth.test.js                    > auth token route flow
-    +-- ./test/todo.test.js                    > todo routes flow 
-    \-- ./test/user.test.js                    > user routes flow
-
-8 directories, 20 files
+## Directory Structure
+- view <https://github.com/madman20/todoApi/blob/master/dir_list.txt>
 
 ## Run locally 
 
