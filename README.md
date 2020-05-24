@@ -2,8 +2,6 @@
 
 > Basic todo crud with basic jwt authentication and basic unit test cases 
 
-> directory and file explaination as follows--
-
 ## Directory Structure
 - view <https://github.com/madman20/todoApi/blob/master/dir_list.txt>
 
