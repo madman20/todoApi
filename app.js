@@ -21,12 +21,6 @@ app.use(cors())
 // use middleware to log HTTP requests with morgan
 app.use(morgan('combined'))
 
-//missed routed
-app.use(function(req, res, next) {
-  var err = new Error('Not Found ' + req.method + ' ' + req.url + "\n\n");
-  err.status = 404;
-  res.status(404).json({ status:err.status, msg: err.message });
-});
 
 // Use middleware to set up routes
 app.use('/todo', require('./routes/todo'))
@@ -34,6 +28,12 @@ app.use('/auth', require('./routes/auth'))
 app.use('/user', require('./routes/user'))
 app.use('/', (req,res)=> {res.send('USE /todo/all')})
 
+//missed routed
+app.use(function(req, res, next) {
+  var err = new Error('Not Found ' + req.method + ' ' + req.url);
+  err.status = 404;
+  res.status(404).json({ status:err.status, msg: err.message });
+});
 
 
 // catch all errors
